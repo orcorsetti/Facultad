@@ -1,5 +1,5 @@
 # Facultad
-Códigos desarrollados por Ornela Milagros Corsetti, en las distintas cátedras de la carrera de ingeniería en sistemas de información de la Universidad Tecnológica Nacional, Regional Rosario
+Códigos desarrollados por Ornela Milagros Corsetti, en las distintas materias de la carrera de ingeniería en sistemas de información de la Universidad Tecnológica Nacional, Regional Rosario
 
 ## Materias
 - **Algoritmos Genéticos:** Aprobada en 2018.
