@@ -3,32 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clase 2</title>
+  <title>Ejemplo</title>
 </head>
 <body>
-  <!-- <div (click)="add(777777)">
-    <h1 (click)="value=0">{{value}}</h1>
-    <button (click)="add(1)"> Sumar 1</button>
-    <button (click)="add (10)"> Sumar 10</button>
-    <button (click)="add(100)" (focus)="add(10000000)"> Sumar 100</button>
-  </div> -->
-
-  <!-- <ul>
-    <li *ngFor="let language of list">{{language}}</li>
+  <div>
+    <input type="text" #addInput 
+      (keyup.enter)="add(addInput)"
+      (focus)="focus = true" 
+      (blur)="focus = false"
+      class="inputAdd" placeholder="Ingrese la tarea" size="30px" >
+    <img src="../assets/info.png" *ngIf = "focus"> 
+    <span *ngIf="focus">Presione enter para añadir</span> 
+  </div>
+  <div class="uncompleted">
+    <h1>Tareas Pendientes</h1>
+    <hr>
+    <ul>
+      <li *ngFor = "let item of list">
+        <input type="checkbox" (click)="checked(item)">
+        {{item.description}}
+        <input (click)="remove(item)" type="image" src="../assets/delete.png">
+      </li>
+    </ul>
+</div>
+<div class="completed">
+  <h1>Tareas Completadas</h1>
+  <hr>
+  <ul class="completed">
+    <li *ngFor="let item of listCompleted">
+      <input type="checkbox" checked (click)="unchecked(item)">
+      {{item.description}}
+      <input type="image" src="../assets/delete.png" (click)="remove(item)">
+    </li>
   </ul>
-  <button (click)="addElement()">Agregar Elemento</button> -->
-
-  <h1 (click)="value=0">{{value}}</h1>
-  <button (click)="add(1)">Agregar 1</button>
-  <!-- <h2 *ngIf="value>10"> Es mayor de 10</h2>
-  <h2 *ngIf="value<=10"> Es menor de 10</h2>
-  
-  <div [ngClass]="getClassesforDiv()"><p>Acá pongo estilos</p></div>
-  
-  <div [class.resaltado]="value>10"><p>Acá pongo estilos mayor 10</p></div> -->
-  
-  <h1 [style.font-size.px]="value * 10">{{value}}</h1>
-
-
+</div>
 </body>
 </html>
