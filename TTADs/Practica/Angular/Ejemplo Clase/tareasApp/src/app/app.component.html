@@ -18,24 +18,24 @@
   <div class="uncompleted">
     <h1>Tareas Pendientes</h1>
     <hr>
-    <ul>
+    <ul class="uncompleted">
       <li *ngFor = "let item of list">
         <input type="checkbox" (click)="checked(item)">
         {{item.description}}
         <input (click)="remove(item)" type="image" src="../assets/delete.png">
       </li>
     </ul>
-</div>
-<div class="completed">
-  <h1>Tareas Completadas</h1>
-  <hr>
-  <ul class="completed">
-    <li *ngFor="let item of listCompleted">
-      <input type="checkbox" checked (click)="unchecked(item)">
-      {{item.description}}
-      <input type="image" src="../assets/delete.png" (click)="remove(item)">
-    </li>
-  </ul>
-</div>
+  </div>
+  <div class="completed">
+    <h1>Tareas Completadas</h1>
+    <hr>
+    <ul class="completed">
+      <li *ngFor="let item of listCompleted">
+        <input type="checkbox" checked (click)="unchecked(item)">
+        {{item.description}}
+        <input type="image" src="../assets/delete.png" (click)="remove(item)" >
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
