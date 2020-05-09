@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo</title>
+</head>
+<body>
+  <div>
+    <input type="text" #addInput 
+      (keyup.enter)="add(addInput)"
+      (focus)="focus = true" 
+      (blur)="focus = false"
+      class="inputAdd" placeholder="Ingrese la tarea" size="30px" >
+    <img src="../assets/info.png" *ngIf = "focus"> 
+    <span *ngIf="focus">Presione enter para añadir</span> 
+  </div>
+  <div class="uncompleted">
+    <h1>Tareas Pendientes</h1>
+    <hr>
+    <ul class="uncompleted">
+      <li *ngFor = "let item of list">
+        <input type="checkbox" (click)="checked(item)">
+        {{item.description}}
+        <input (click)="remove(item)" type="image" src="../assets/delete.png">
+      </li>
+    </ul>
+  </div>
+  <div class="completed">
+    <h1>Tareas Completadas</h1>
+    <hr>
+    <ul class="completed">
+      <li *ngFor="let item of listCompleted">
+        <input type="checkbox" checked (click)="unchecked(item)">
+        {{item.description}}
+        <input type="image" src="../assets/delete.png" (click)="remove(item)" >
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

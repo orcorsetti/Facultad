@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>testApp</title>
+</head>
+<body>
+  <p>Expresion: {{2 + 2}}</p>
+  <p>Expresion: {{inicial + 2}}</p>
+  <app-arrayAdder></app-arrayAdder>
+
+    <!-- <div (click)="add(777777)">
+    <h1 (click)="value=0">{{value}}</h1>
+    <button (click)="add(1)"> Sumar 1</button>
+    <button (click)="add (10)"> Sumar 10</button>
+    <button (click)="add(100)" (focus)="add(10000000)"> Sumar 100</button>
+  </div> -->
+
+  <!-- <ul>
+    <li *ngFor="let language of list">{{language}}</li>
+  </ul>
+  <button (click)="addElement()">Agregar Elemento</button> -->
+
+  <h1 (click)="value=0">{{value}}</h1>
+  <button (click)="add(1)">Agregar 1</button>
+  <!-- <h2 *ngIf="value>10"> Es mayor de 10</h2>
+  <h2 *ngIf="value<=10"> Es menor de 10</h2>
+  
+  <div [ngClass]="getClassesforDiv()"><p>Acá pongo estilos</p></div>
+  
+  <div [class.resaltado]="value>10"><p>Acá pongo estilos mayor 10</p></div> -->
+  
+  <h1 [style.font-size.px]="value * 10">{{value}}</h1>
+
+</body>
+</html>
