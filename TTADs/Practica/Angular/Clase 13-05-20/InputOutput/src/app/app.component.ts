@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'InputOutput';
+  counterValue = 0;
+
+  onCountChanged(event){
+    this.counterValue= event;
+  }
+
+  onSecondNumberClicked(event){
+    this.counterValue = 0;
+  }
+
+  onThirdNumberClicked(event){
+    this.counterValue -= 1;
+  }
 }
