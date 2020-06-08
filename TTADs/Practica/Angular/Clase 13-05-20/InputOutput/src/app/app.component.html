@@ -1,0 +1,35 @@
+<!-- <app-counter 
+  [config]="{description: 'Contador de a 10', incrementValue: 10}"
+  [count]="10"
+  subtitle = 'Esto es un subtitulo'
+  (countChanged)="onCountChanged($event)">
+</app-counter>
+
+<app-counter 
+[config]="{description: 'Contador de a 5', incrementValue: 5}"
+[count]="15"
+(countChanged)="onCountChanged($event)">
+</app-counter>
+
+<app-counter (countChanged)="onCountChanged($event)"></app-counter>
+<h1>Valor Actual del contador: {{counterValue}}</h1> -->
+
+<app-counter 
+[config]="{description: 'Contador suma de a 1', incrementValue: 1}"
+[count]="counterValue"
+(countChanged)="onCountChanged($event)">
+</app-counter>
+
+<app-counter 
+[config]="{description: 'Contador suma de a 10', incrementValue: 10}"
+[count]="counterValue"
+(countChanged)="onCountChanged($event)"
+(numberClicked)="onSecondNumberClicked($event)">
+</app-counter>
+
+<app-counter 
+[config]="{description: 'Contador suma de a 100', incrementValue: 100}"
+[count]="counterValue"
+(countChanged)="onCountChanged($event)"
+(numberClicked)="onThirdNumberClicked($event)">
+</app-counter>

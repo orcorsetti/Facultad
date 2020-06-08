@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ArrayAdderComponent } from './array-adder/array-adder.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArrayAdderComponent
+    CounterComponent
   ],
   imports: [
     BrowserModule,
