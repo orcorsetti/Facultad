@@ -6,4 +6,5 @@ Códigos desarrollados por Ornela Milagros Corsetti, en las distintas materias d
 - **Soporte a la gestión de datos con programación visual:** Aprobada en 2019.
 - **Tecnologías de desarrollo de software IDE (.NET):** Aprobada en 2019.
 - **Simulación:** Aprobada en 2019.
-- **Entornos Gráficos:** Cursando en 2020.
+- **Entornos Gráficos:** Regularizada en 2020.
+- **Técnicas y Tecnologías Avanzadas de Desarrollo:** Cursando 2020.
